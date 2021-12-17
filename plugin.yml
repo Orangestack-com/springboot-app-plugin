@@ -1,0 +1,15 @@
+name: "spring-native-app-plugin"
+description: Plugin to sqs consumer
+type: plugin
+languages:
+  - "kotlin"
+tags:
+  - "default_stack"  
+inputs:
+  - label: "Do you want to expose rest api: "
+    type: text
+    name: "starter-web"
+    items:
+      - "YES"
+      - "NO"
+    default: "YES"
