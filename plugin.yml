@@ -1,5 +1,5 @@
 name: "spring-native-app-plugin"
-description: Plugin to sqs consumer
+description: Plugin to Spring native
 type: plugin
 languages:
   - "kotlin"
