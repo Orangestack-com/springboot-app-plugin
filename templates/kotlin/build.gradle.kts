@@ -5,7 +5,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 plugins {
     id("org.springframework.boot") version "2.6.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    {% if inputs.spring-native == true %}
+    {% if inputs.spring-native %}
     id("org.springframework.experimental.aot") version "0.11.0"
     {% endif %}
     kotlin("plugin.spring") version "1.6.0"
