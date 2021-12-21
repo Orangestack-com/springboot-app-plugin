@@ -20,13 +20,11 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-
     {% if inputs.starter-web %}
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
     {% endif %}
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 {% if inputs.spring-native %}
