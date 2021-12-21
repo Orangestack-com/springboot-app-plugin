@@ -1,4 +1,4 @@
-{% if inputs.spring-native == true %}
+{% if inputs.spring-native %}
 import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 {% endif %}
 
