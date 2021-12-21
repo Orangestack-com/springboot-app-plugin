@@ -1,4 +1,4 @@
-name: "spring-app-plugin"
+name: "springboot-app-plugin"
 description: Plugin to Spring
 type: plugin
 languages:
@@ -6,10 +6,6 @@ languages:
 tags:
   - "default_stack"  
 inputs:
-  - label: "Do you want to use Spring Boot Native: "
-    type: bool
-    name: "spring-native"
-    default: false
   - label: "Do you want to expose rest api: "
     type: bool
     name: "starter-web"

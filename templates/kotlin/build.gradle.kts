@@ -1,21 +1,11 @@
-{% if inputs.spring-native %}
-import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
-{% endif %}
-
 plugins {
-    id("org.springframework.boot") version "2.6.1"
+    id("org.springframework.boot") version "2.5.7"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    {% if inputs.spring-native %}
-    id("org.springframework.experimental.aot") version "0.11.0"
-    {% endif %}
-    kotlin("plugin.spring") version "1.6.0"
+    kotlin("plugin.spring") version "1.5.31"
 }
 
 repositories {
     mavenCentral()
-    {% if inputs.spring-native %}
-    maven { url = uri("https://repo.spring.io/release") }
-    {% endif %}
 }
 
 dependencies {
@@ -26,12 +16,3 @@ dependencies {
     {% endif %}
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
-
-{% if inputs.spring-native %}
-tasks.withType<BootBuildImage> {
-    builder = "paketobuildpacks/builder:tiny"
-    environment = mapOf(
-        "BP_NATIVE_IMAGE" to "true"
-    )
-}
-{% endif %}
