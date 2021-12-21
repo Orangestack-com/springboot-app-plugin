@@ -29,7 +29,7 @@ dependencies {
     {% endif %}
 }
 
-{% if inputs.spring-native == true %}
+{% if inputs.spring-native %}
 tasks.withType<BootBuildImage> {
     builder = "paketobuildpacks/builder:tiny"
     environment = mapOf(
