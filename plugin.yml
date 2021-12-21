@@ -6,7 +6,7 @@ languages:
 tags:
   - "default_stack"  
 inputs:
-  - label: "Do you want to Spring Native: "
+  - label: "Do you want to use Spring Boot Native: "
     type: bool
     name: "spring-native"
     default: false
