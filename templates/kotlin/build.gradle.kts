@@ -13,7 +13,7 @@ plugins {
 
 repositories {
     mavenCentral()
-    {% if inputs.spring-native == true %}
+    {% if inputs.spring-native %}
     maven { url = uri("https://repo.spring.io/release") }
     {% endif %}
 }
