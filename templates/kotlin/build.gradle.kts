@@ -10,9 +10,10 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
-    {% if inputs.starter-web %}
+    { % if inputs.starter-web % }
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    {% endif %}
+    { % endif % }
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
