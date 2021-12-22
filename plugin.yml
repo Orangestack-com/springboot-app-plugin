@@ -1,0 +1,12 @@
+name: "springboot-app-plugin"
+description: Plugin to configure Spring Boot
+type: plugin
+languages:
+  - "kotlin"
+tags:
+  - "default_stack"  
+inputs:
+  - label: "Do you want to expose rest api: "
+    type: bool
+    name: "starter-web"
+    default: true
