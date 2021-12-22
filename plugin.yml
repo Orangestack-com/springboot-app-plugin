@@ -1,5 +1,5 @@
 name: "springboot-app-plugin"
-description: Plugin to Spring
+description: Plugin to configure Spring Boot
 type: plugin
 languages:
   - "kotlin"
