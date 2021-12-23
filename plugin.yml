@@ -3,7 +3,7 @@ description: Plugin to configure Spring Boot
 types:
   - app
 languages:
-  - "kotlin"
+  - kotlin
 tags:
   - "default_stack"  
 inputs:
