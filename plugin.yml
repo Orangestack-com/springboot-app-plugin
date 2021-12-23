@@ -5,7 +5,7 @@ types:
 languages:
   - kotlin
 tags:
-  - "default_stack"  
+  - spring
 inputs:
   - label: "Project group id:"
     type: text
