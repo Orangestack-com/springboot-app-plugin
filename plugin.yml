@@ -7,9 +7,6 @@ languages:
 tags:
   - spring
 inputs:
-  - label: "Project group id:"
-    type: text
-    name: "project_group_id"
   - label: "Do you want to expose rest api: "
     type: bool
     name: "starter_web"
