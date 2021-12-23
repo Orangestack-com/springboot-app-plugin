@@ -8,5 +8,5 @@ tags:
 inputs:
   - label: "Do you want to expose rest api: "
     type: bool
-    name: "starter-web"
+    name: "starter_web"
     default: true
