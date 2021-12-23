@@ -1,11 +1,15 @@
 name: "springboot-app-plugin"
 description: Plugin to configure Spring Boot
-type: plugin
+types:
+  - app
 languages:
   - "kotlin"
 tags:
   - "default_stack"  
 inputs:
+  - label: "Project group id:"
+    type: text
+    name: "project_group_id"
   - label: "Do you want to expose rest api: "
     type: bool
     name: "starter_web"
