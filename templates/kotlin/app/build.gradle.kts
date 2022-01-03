@@ -4,10 +4,6 @@ plugins {
     kotlin("plugin.spring") version "1.6.10"
 }
 
-repositories {
-    mavenCentral()
-}
-
 ext["log4j2.version"] = "2.17.1"
 
 dependencies {
@@ -20,3 +16,5 @@ dependencies {
     {% endif %}
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
+
+repositories { mavenCentral() }
