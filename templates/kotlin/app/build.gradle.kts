@@ -8,6 +8,8 @@ repositories {
     mavenCentral()
 }
 
+ext["log4j2.version"] = "2.17.1"
+
 dependencies {
     {% if inputs.starter_web %}
     implementation("org.springframework.boot:spring-boot-starter-actuator")
