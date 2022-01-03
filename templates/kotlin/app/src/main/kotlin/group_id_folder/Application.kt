@@ -1,11 +1,9 @@
-package {{project_group_id}}
-
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class APIApplication
+class Application
 
 fun main(args: Array<String>) {
-    runApplication<APIApplication>(*args)
+    runApplication<Application>(*args)
 }
