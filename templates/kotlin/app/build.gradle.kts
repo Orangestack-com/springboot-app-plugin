@@ -17,3 +17,4 @@ dependencies {
 
 #scaffold: append-to-end-of-file
 ext["log4j2.version"] = "2.17.1"
+
