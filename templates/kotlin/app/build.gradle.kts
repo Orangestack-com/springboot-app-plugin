@@ -14,6 +14,3 @@ dependencies {
     {% endif %}
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
-
-#scaffold: append-to-end-of-file
-ext["log4j2.version"] = "2.17.1"
