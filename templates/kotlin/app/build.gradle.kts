@@ -4,8 +4,6 @@ plugins {
     kotlin("plugin.spring") version "1.6.10"
 }
 
-ext["log4j2.version"] = "2.17.1"
-
 dependencies {
     {% if inputs.starter_web %}
     implementation("org.springframework.boot:spring-boot-starter-actuator")
